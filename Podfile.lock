@@ -1,0 +1,13 @@
+PODS:
+  - DLRUIKit (1.2.0)
+  - OCMock (3.1.2)
+
+DEPENDENCIES:
+  - DLRUIKit (~> 1.2.0)
+  - OCMock (~> 3.1)
+
+SPEC CHECKSUMS:
+  DLRUIKit: d2db6e19aa584ffd645920d12895e5ca8374f7ca
+  OCMock: ecdd510b73ef397f2f97274785c1e87fd147c49f
+
+COCOAPODS: 0.36.0.beta.2

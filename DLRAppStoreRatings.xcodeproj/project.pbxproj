@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		086519FF16CF51BCEB5564D4 /* libPods-DLRAppStoreRatingsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9893E9B62FE2E8F510D59095 /* libPods-DLRAppStoreRatingsTests.a */; };
+		43A6C9971A8BCED100747026 /* DLRAppStoreRatings.h in Headers */ = {isa = PBXBuildFile; fileRef = 43A6C9961A8BCED100747026 /* DLRAppStoreRatings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43A6C99D1A8BCED100747026 /* DLRAppStoreRatings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A6C9911A8BCED100747026 /* DLRAppStoreRatings.framework */; };
+		43D628221A8BD9B7002D1BE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D628211A8BD9B7002D1BE3 /* main.m */; };
+		43D628251A8BD9B7002D1BE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D628241A8BD9B7002D1BE3 /* AppDelegate.m */; };
+		43D6282B1A8BD9B7002D1BE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43D628291A8BD9B7002D1BE3 /* Main.storyboard */; };
+		43D6282D1A8BD9B7002D1BE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43D6282C1A8BD9B7002D1BE3 /* Images.xcassets */; };
+		43D628301A8BD9B7002D1BE3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43D6282E1A8BD9B7002D1BE3 /* LaunchScreen.xib */; };
+		43D628451A8BD9F9002D1BE3 /* DLRAppStoreRatings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A6C9911A8BCED100747026 /* DLRAppStoreRatings.framework */; };
+		43F06FC21A951A8B004D6174 /* DLRAppStoreRatingsDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 43F06FBA1A951A8B004D6174 /* DLRAppStoreRatingsDataSource.h */; };
+		43F06FC31A951A8B004D6174 /* DLRAppStoreRatingsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F06FBB1A951A8B004D6174 /* DLRAppStoreRatingsDataSource.m */; };
+		43F06FC41A951A8B004D6174 /* DLRAppStoreRatingsDebugManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 43F06FBC1A951A8B004D6174 /* DLRAppStoreRatingsDebugManager.h */; };
+		43F06FC51A951A8B004D6174 /* DLRAppStoreRatingsDebugManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F06FBD1A951A8B004D6174 /* DLRAppStoreRatingsDebugManager.m */; };
+		43F06FC61A951A8B004D6174 /* DLRAppStoreRatingsRule.h in Headers */ = {isa = PBXBuildFile; fileRef = 43F06FBE1A951A8B004D6174 /* DLRAppStoreRatingsRule.h */; };
+		43F06FC71A951A8B004D6174 /* DLRAppStoreRatingsRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F06FBF1A951A8B004D6174 /* DLRAppStoreRatingsRule.m */; };
+		43F06FC81A951A8B004D6174 /* DLRAppStoreRatingsTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 43F06FC01A951A8B004D6174 /* DLRAppStoreRatingsTracker.h */; };
+		43F06FC91A951A8B004D6174 /* DLRAppStoreRatingsTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F06FC11A951A8B004D6174 /* DLRAppStoreRatingsTracker.m */; };
+		43F06FCE1A951A96004D6174 /* DLRAppStoreRatingsDataSourceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F06FCA1A951A96004D6174 /* DLRAppStoreRatingsDataSourceSpec.m */; };
+		43F06FCF1A951A96004D6174 /* DLRAppStoreRatingsDebugManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F06FCB1A951A96004D6174 /* DLRAppStoreRatingsDebugManagerSpec.m */; };
+		43F06FD01A951A96004D6174 /* DLRAppStoreRatingsRuleSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F06FCC1A951A96004D6174 /* DLRAppStoreRatingsRuleSpec.m */; };
+		43F06FD11A951A96004D6174 /* DLRAppStoreRatingsTrackerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F06FCD1A951A96004D6174 /* DLRAppStoreRatingsTrackerSpec.m */; };
+		FEC817BB5EE3401EAF224BCD /* libPods-DLRAppStoreRatings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA9B6312597F003F171111F /* libPods-DLRAppStoreRatings.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43A6C99E1A8BCED100747026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43A6C9881A8BCED100747026 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43A6C9901A8BCED100747026;
+			remoteInfo = DLRAppStoreRatings;
+		};
+		43D628431A8BD9C5002D1BE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43A6C9881A8BCED100747026 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43D6281C1A8BD9B7002D1BE3;
+			remoteInfo = DLRAppStoreRatingsExampleApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		166CE7E8AEEF8795AB58D24A /* Pods-DLRAppStoreRatings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLRAppStoreRatings.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DLRAppStoreRatings/Pods-DLRAppStoreRatings.debug.xcconfig"; sourceTree = "<group>"; };
+		43A6C9911A8BCED100747026 /* DLRAppStoreRatings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DLRAppStoreRatings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43A6C9951A8BCED100747026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43A6C9961A8BCED100747026 /* DLRAppStoreRatings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLRAppStoreRatings.h; sourceTree = "<group>"; };
+		43A6C99C1A8BCED100747026 /* DLRAppStoreRatingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DLRAppStoreRatingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43A6C9A21A8BCED100747026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43D628131A8BD7FF002D1BE3 /* DLRAppStoreRatings.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DLRAppStoreRatings.podspec; sourceTree = "<group>"; };
+		43D628151A8BD7FF002D1BE3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		43D6281D1A8BD9B7002D1BE3 /* DLRAppStoreRatingsExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DLRAppStoreRatingsExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43D628201A8BD9B7002D1BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43D628211A8BD9B7002D1BE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		43D628231A8BD9B7002D1BE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		43D628241A8BD9B7002D1BE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		43D6282A1A8BD9B7002D1BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43D6282C1A8BD9B7002D1BE3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		43D6282F1A8BD9B7002D1BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		43F06FBA1A951A8B004D6174 /* DLRAppStoreRatingsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRAppStoreRatingsDataSource.h; sourceTree = "<group>"; };
+		43F06FBB1A951A8B004D6174 /* DLRAppStoreRatingsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRAppStoreRatingsDataSource.m; sourceTree = "<group>"; };
+		43F06FBC1A951A8B004D6174 /* DLRAppStoreRatingsDebugManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRAppStoreRatingsDebugManager.h; sourceTree = "<group>"; };
+		43F06FBD1A951A8B004D6174 /* DLRAppStoreRatingsDebugManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRAppStoreRatingsDebugManager.m; sourceTree = "<group>"; };
+		43F06FBE1A951A8B004D6174 /* DLRAppStoreRatingsRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRAppStoreRatingsRule.h; sourceTree = "<group>"; };
+		43F06FBF1A951A8B004D6174 /* DLRAppStoreRatingsRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRAppStoreRatingsRule.m; sourceTree = "<group>"; };
+		43F06FC01A951A8B004D6174 /* DLRAppStoreRatingsTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLRAppStoreRatingsTracker.h; sourceTree = "<group>"; };
+		43F06FC11A951A8B004D6174 /* DLRAppStoreRatingsTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRAppStoreRatingsTracker.m; sourceTree = "<group>"; };
+		43F06FCA1A951A96004D6174 /* DLRAppStoreRatingsDataSourceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRAppStoreRatingsDataSourceSpec.m; sourceTree = "<group>"; };
+		43F06FCB1A951A96004D6174 /* DLRAppStoreRatingsDebugManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRAppStoreRatingsDebugManagerSpec.m; sourceTree = "<group>"; };
+		43F06FCC1A951A96004D6174 /* DLRAppStoreRatingsRuleSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRAppStoreRatingsRuleSpec.m; sourceTree = "<group>"; };
+		43F06FCD1A951A96004D6174 /* DLRAppStoreRatingsTrackerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRAppStoreRatingsTrackerSpec.m; sourceTree = "<group>"; };
+		887F95B3E373D053230B9A50 /* Pods-DLRAppStoreRatingsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLRAppStoreRatingsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DLRAppStoreRatingsTests/Pods-DLRAppStoreRatingsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		966B2370841252BCD27E8198 /* Pods-DLRAppStoreRatingsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLRAppStoreRatingsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DLRAppStoreRatingsTests/Pods-DLRAppStoreRatingsTests.release.xcconfig"; sourceTree = "<group>"; };
+		9893E9B62FE2E8F510D59095 /* libPods-DLRAppStoreRatingsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DLRAppStoreRatingsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA9B6312597F003F171111F /* libPods-DLRAppStoreRatings.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DLRAppStoreRatings.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA3DE19BB5CC568BCD9571D /* Pods-DLRAppStoreRatings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLRAppStoreRatings.release.xcconfig"; path = "Pods/Target Support Files/Pods-DLRAppStoreRatings/Pods-DLRAppStoreRatings.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43A6C98D1A8BCED100747026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC817BB5EE3401EAF224BCD /* libPods-DLRAppStoreRatings.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A6C9991A8BCED100747026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A6C99D1A8BCED100747026 /* DLRAppStoreRatings.framework in Frameworks */,
+				086519FF16CF51BCEB5564D4 /* libPods-DLRAppStoreRatingsTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43D6281A1A8BD9B7002D1BE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43D628451A8BD9F9002D1BE3 /* DLRAppStoreRatings.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		313E6AF2891FC3682969EC7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCA9B6312597F003F171111F /* libPods-DLRAppStoreRatings.a */,
+				9893E9B62FE2E8F510D59095 /* libPods-DLRAppStoreRatingsTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43A6C9871A8BCED100747026 = {
+			isa = PBXGroup;
+			children = (
+				43A6C9931A8BCED100747026 /* DLRAppStoreRatings */,
+				43A6C9A01A8BCED100747026 /* DLRAppStoreRatingsTests */,
+				43D6281E1A8BD9B7002D1BE3 /* DLRAppStoreRatingsExampleApp */,
+				313E6AF2891FC3682969EC7E /* Frameworks */,
+				E2CAD336F6B8873917754714 /* Pods */,
+				43A6C9921A8BCED100747026 /* Products */,
+				43D628121A8BD7ED002D1BE3 /* Supporting Files */,
+			);
+			sourceTree = "<group>";
+		};
+		43A6C9921A8BCED100747026 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43A6C9911A8BCED100747026 /* DLRAppStoreRatings.framework */,
+				43A6C99C1A8BCED100747026 /* DLRAppStoreRatingsTests.xctest */,
+				43D6281D1A8BD9B7002D1BE3 /* DLRAppStoreRatingsExampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43A6C9931A8BCED100747026 /* DLRAppStoreRatings */ = {
+			isa = PBXGroup;
+			children = (
+				43D628101A8BD744002D1BE3 /* AppStoreRatings */,
+				43A6C9941A8BCED100747026 /* Supporting Files */,
+				43A6C9961A8BCED100747026 /* DLRAppStoreRatings.h */,
+			);
+			path = DLRAppStoreRatings;
+			sourceTree = "<group>";
+		};
+		43A6C9941A8BCED100747026 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43A6C9951A8BCED100747026 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43A6C9A01A8BCED100747026 /* DLRAppStoreRatingsTests */ = {
+			isa = PBXGroup;
+			children = (
+				43D628111A8BD767002D1BE3 /* AppStoreRatings Tests */,
+				43A6C9A11A8BCED100747026 /* Supporting Files */,
+			);
+			path = DLRAppStoreRatingsTests;
+			sourceTree = "<group>";
+		};
+		43A6C9A11A8BCED100747026 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43A6C9A21A8BCED100747026 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43D628101A8BD744002D1BE3 /* AppStoreRatings */ = {
+			isa = PBXGroup;
+			children = (
+				43F06FBA1A951A8B004D6174 /* DLRAppStoreRatingsDataSource.h */,
+				43F06FBB1A951A8B004D6174 /* DLRAppStoreRatingsDataSource.m */,
+				43F06FBC1A951A8B004D6174 /* DLRAppStoreRatingsDebugManager.h */,
+				43F06FBD1A951A8B004D6174 /* DLRAppStoreRatingsDebugManager.m */,
+				43F06FBE1A951A8B004D6174 /* DLRAppStoreRatingsRule.h */,
+				43F06FBF1A951A8B004D6174 /* DLRAppStoreRatingsRule.m */,
+				43F06FC01A951A8B004D6174 /* DLRAppStoreRatingsTracker.h */,
+				43F06FC11A951A8B004D6174 /* DLRAppStoreRatingsTracker.m */,
+			);
+			name = AppStoreRatings;
+			path = source;
+			sourceTree = "<group>";
+		};
+		43D628111A8BD767002D1BE3 /* AppStoreRatings Tests */ = {
+			isa = PBXGroup;
+			children = (
+				43F06FCA1A951A96004D6174 /* DLRAppStoreRatingsDataSourceSpec.m */,
+				43F06FCB1A951A96004D6174 /* DLRAppStoreRatingsDebugManagerSpec.m */,
+				43F06FCC1A951A96004D6174 /* DLRAppStoreRatingsRuleSpec.m */,
+				43F06FCD1A951A96004D6174 /* DLRAppStoreRatingsTrackerSpec.m */,
+			);
+			name = "AppStoreRatings Tests";
+			path = source;
+			sourceTree = "<group>";
+		};
+		43D628121A8BD7ED002D1BE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43D628131A8BD7FF002D1BE3 /* DLRAppStoreRatings.podspec */,
+				43D628151A8BD7FF002D1BE3 /* README.md */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43D6281E1A8BD9B7002D1BE3 /* DLRAppStoreRatingsExampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				43D628471A8BDA8F002D1BE3 /* Source */,
+				43D628461A8BDA4C002D1BE3 /* Resources */,
+				43D6281F1A8BD9B7002D1BE3 /* Supporting Files */,
+			);
+			path = DLRAppStoreRatingsExampleApp;
+			sourceTree = "<group>";
+		};
+		43D6281F1A8BD9B7002D1BE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43D628201A8BD9B7002D1BE3 /* Info.plist */,
+				43D628211A8BD9B7002D1BE3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43D628461A8BDA4C002D1BE3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				43D6282C1A8BD9B7002D1BE3 /* Images.xcassets */,
+				43D6282E1A8BD9B7002D1BE3 /* LaunchScreen.xib */,
+				43D628291A8BD9B7002D1BE3 /* Main.storyboard */,
+			);
+			name = Resources;
+			path = resources;
+			sourceTree = "<group>";
+		};
+		43D628471A8BDA8F002D1BE3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				43D628231A8BD9B7002D1BE3 /* AppDelegate.h */,
+				43D628241A8BD9B7002D1BE3 /* AppDelegate.m */,
+			);
+			name = Source;
+			path = source;
+			sourceTree = "<group>";
+		};
+		E2CAD336F6B8873917754714 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				166CE7E8AEEF8795AB58D24A /* Pods-DLRAppStoreRatings.debug.xcconfig */,
+				CEA3DE19BB5CC568BCD9571D /* Pods-DLRAppStoreRatings.release.xcconfig */,
+				887F95B3E373D053230B9A50 /* Pods-DLRAppStoreRatingsTests.debug.xcconfig */,
+				966B2370841252BCD27E8198 /* Pods-DLRAppStoreRatingsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		43A6C98E1A8BCED100747026 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43F06FC41A951A8B004D6174 /* DLRAppStoreRatingsDebugManager.h in Headers */,
+				43F06FC81A951A8B004D6174 /* DLRAppStoreRatingsTracker.h in Headers */,
+				43A6C9971A8BCED100747026 /* DLRAppStoreRatings.h in Headers */,
+				43F06FC61A951A8B004D6174 /* DLRAppStoreRatingsRule.h in Headers */,
+				43F06FC21A951A8B004D6174 /* DLRAppStoreRatingsDataSource.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		43A6C9901A8BCED100747026 /* DLRAppStoreRatings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43A6C9A71A8BCED100747026 /* Build configuration list for PBXNativeTarget "DLRAppStoreRatings" */;
+			buildPhases = (
+				7D07763BBB4F55491786D820 /* Check Pods Manifest.lock */,
+				43A6C98C1A8BCED100747026 /* Sources */,
+				43A6C98D1A8BCED100747026 /* Frameworks */,
+				43A6C98E1A8BCED100747026 /* Headers */,
+				43A6C98F1A8BCED100747026 /* Resources */,
+				AB66A0B5D4A0C906955F1FC4 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DLRAppStoreRatings;
+			productName = DLRAppStoreRatings;
+			productReference = 43A6C9911A8BCED100747026 /* DLRAppStoreRatings.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		43A6C99B1A8BCED100747026 /* DLRAppStoreRatingsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43A6C9AA1A8BCED100747026 /* Build configuration list for PBXNativeTarget "DLRAppStoreRatingsTests" */;
+			buildPhases = (
+				07C1F00B1768D47598989ECF /* Check Pods Manifest.lock */,
+				43A6C9981A8BCED100747026 /* Sources */,
+				43A6C9991A8BCED100747026 /* Frameworks */,
+				43A6C99A1A8BCED100747026 /* Resources */,
+				648943E845DCA2B351453306 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43A6C99F1A8BCED100747026 /* PBXTargetDependency */,
+				43D628441A8BD9C5002D1BE3 /* PBXTargetDependency */,
+			);
+			name = DLRAppStoreRatingsTests;
+			productName = DLRAppStoreRatingsTests;
+			productReference = 43A6C99C1A8BCED100747026 /* DLRAppStoreRatingsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		43D6281C1A8BD9B7002D1BE3 /* DLRAppStoreRatingsExampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43D6283D1A8BD9B8002D1BE3 /* Build configuration list for PBXNativeTarget "DLRAppStoreRatingsExampleApp" */;
+			buildPhases = (
+				43D628191A8BD9B7002D1BE3 /* Sources */,
+				43D6281A1A8BD9B7002D1BE3 /* Frameworks */,
+				43D6281B1A8BD9B7002D1BE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DLRAppStoreRatingsExampleApp;
+			productName = DLRAppStoreRatingsExampleApp;
+			productReference = 43D6281D1A8BD9B7002D1BE3 /* DLRAppStoreRatingsExampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43A6C9881A8BCED100747026 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Detroit Labs, LLC";
+				TargetAttributes = {
+					43A6C9901A8BCED100747026 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					43A6C99B1A8BCED100747026 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 43D6281C1A8BD9B7002D1BE3;
+					};
+					43D6281C1A8BD9B7002D1BE3 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 43A6C98B1A8BCED100747026 /* Build configuration list for PBXProject "DLRAppStoreRatings" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43A6C9871A8BCED100747026;
+			productRefGroup = 43A6C9921A8BCED100747026 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43A6C9901A8BCED100747026 /* DLRAppStoreRatings */,
+				43A6C99B1A8BCED100747026 /* DLRAppStoreRatingsTests */,
+				43D6281C1A8BD9B7002D1BE3 /* DLRAppStoreRatingsExampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43A6C98F1A8BCED100747026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A6C99A1A8BCED100747026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43D6281B1A8BD9B7002D1BE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43D6282B1A8BD9B7002D1BE3 /* Main.storyboard in Resources */,
+				43D628301A8BD9B7002D1BE3 /* LaunchScreen.xib in Resources */,
+				43D6282D1A8BD9B7002D1BE3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07C1F00B1768D47598989ECF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		648943E845DCA2B351453306 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DLRAppStoreRatingsTests/Pods-DLRAppStoreRatingsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D07763BBB4F55491786D820 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AB66A0B5D4A0C906955F1FC4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DLRAppStoreRatings/Pods-DLRAppStoreRatings-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43A6C98C1A8BCED100747026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43F06FC71A951A8B004D6174 /* DLRAppStoreRatingsRule.m in Sources */,
+				43F06FC51A951A8B004D6174 /* DLRAppStoreRatingsDebugManager.m in Sources */,
+				43F06FC91A951A8B004D6174 /* DLRAppStoreRatingsTracker.m in Sources */,
+				43F06FC31A951A8B004D6174 /* DLRAppStoreRatingsDataSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A6C9981A8BCED100747026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43F06FCF1A951A96004D6174 /* DLRAppStoreRatingsDebugManagerSpec.m in Sources */,
+				43F06FD11A951A96004D6174 /* DLRAppStoreRatingsTrackerSpec.m in Sources */,
+				43F06FCE1A951A96004D6174 /* DLRAppStoreRatingsDataSourceSpec.m in Sources */,
+				43F06FD01A951A96004D6174 /* DLRAppStoreRatingsRuleSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43D628191A8BD9B7002D1BE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43D628251A8BD9B7002D1BE3 /* AppDelegate.m in Sources */,
+				43D628221A8BD9B7002D1BE3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43A6C99F1A8BCED100747026 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43A6C9901A8BCED100747026 /* DLRAppStoreRatings */;
+			targetProxy = 43A6C99E1A8BCED100747026 /* PBXContainerItemProxy */;
+		};
+		43D628441A8BD9C5002D1BE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43D6281C1A8BD9B7002D1BE3 /* DLRAppStoreRatingsExampleApp */;
+			targetProxy = 43D628431A8BD9C5002D1BE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43D628291A8BD9B7002D1BE3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43D6282A1A8BD9B7002D1BE3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43D6282E1A8BD9B7002D1BE3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43D6282F1A8BD9B7002D1BE3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43A6C9A51A8BCED100747026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		43A6C9A61A8BCED100747026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		43A6C9A81A8BCED100747026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 166CE7E8AEEF8795AB58D24A /* Pods-DLRAppStoreRatings.debug.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DLRAppStoreRatings/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		43A6C9A91A8BCED100747026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEA3DE19BB5CC568BCD9571D /* Pods-DLRAppStoreRatings.release.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DLRAppStoreRatings/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		43A6C9AB1A8BCED100747026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 887F95B3E373D053230B9A50 /* Pods-DLRAppStoreRatingsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DLRAppStoreRatingsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DLRAppStoreRatingsExampleApp.app/DLRAppStoreRatingsExampleApp";
+			};
+			name = Debug;
+		};
+		43A6C9AC1A8BCED100747026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 966B2370841252BCD27E8198 /* Pods-DLRAppStoreRatingsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DLRAppStoreRatingsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DLRAppStoreRatingsExampleApp.app/DLRAppStoreRatingsExampleApp";
+			};
+			name = Release;
+		};
+		43D6283E1A8BD9B8002D1BE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DLRAppStoreRatingsExampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		43D6283F1A8BD9B8002D1BE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DLRAppStoreRatingsExampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43A6C98B1A8BCED100747026 /* Build configuration list for PBXProject "DLRAppStoreRatings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A6C9A51A8BCED100747026 /* Debug */,
+				43A6C9A61A8BCED100747026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43A6C9A71A8BCED100747026 /* Build configuration list for PBXNativeTarget "DLRAppStoreRatings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A6C9A81A8BCED100747026 /* Debug */,
+				43A6C9A91A8BCED100747026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43A6C9AA1A8BCED100747026 /* Build configuration list for PBXNativeTarget "DLRAppStoreRatingsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A6C9AB1A8BCED100747026 /* Debug */,
+				43A6C9AC1A8BCED100747026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43D6283D1A8BD9B8002D1BE3 /* Build configuration list for PBXNativeTarget "DLRAppStoreRatingsExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43D6283E1A8BD9B8002D1BE3 /* Debug */,
+				43D6283F1A8BD9B8002D1BE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43A6C9881A8BCED100747026 /* Project object */;
+}

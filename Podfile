@@ -1,7 +1,7 @@
 platform :ios, '7.0'
 
 target 'DLRAppStoreRatings' do
-  pod 'DLRUIKit', '~> 1.2.0'
+  pod 'DLRUIKit', '~> 1.2'
 end
 
 target 'DLRAppStoreRatingsTests', :exclusive => true do

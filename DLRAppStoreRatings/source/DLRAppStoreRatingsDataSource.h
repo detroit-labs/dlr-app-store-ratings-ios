@@ -8,11 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface DLRAppStoreRatingsDataSource : NSObject
 
-@property (nonatomic, copy) NSString *previousKnownVersion;
-@property (nonatomic, copy) NSDate *lastActionTakenDate;
-@property (nonatomic, copy) NSString *lastRatedVersion;
+@property (nullable, nonatomic, copy) NSString *previousKnownVersion;
+@property (nullable, nonatomic, copy) NSDate *lastActionTakenDate;
+@property (nullable, nonatomic, copy) NSString *lastRatedVersion;
 @property (nonatomic, copy) NSDictionary <NSString *, NSNumber *> *events;
 
 + (instancetype)sharedInstance;
@@ -20,3 +22,5 @@
 - (void)clearEvents;
 
 @end
+
+NS_ASSUME_NONNULL_END

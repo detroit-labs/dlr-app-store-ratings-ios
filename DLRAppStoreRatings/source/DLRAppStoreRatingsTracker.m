@@ -98,7 +98,16 @@ static NSString* const kAppRatingsBundleVersion = @"CFBundleShortVersionString";
         return NO;
     }
     
-    NSDate *whenShouldWeAskAgain = [self.dataSource.lastActionTakenDate dateByAddingTimeInterval:(self.nagDays * 24 * 60 * 60)];
+    NSDateComponents *nagDaysAsComponents = [[NSDateComponents alloc] init];
+    nagDaysAsComponents.day = self.nagDays;
+    
+    NSDate *lastActionTakenDate = [self.dataSource lastActionTakenDate];
+    
+    NSDate *whenShouldWeAskAgain =
+    [[NSCalendar currentCalendar] dateByAddingComponents:nagDaysAsComponents
+                                                  toDate:lastActionTakenDate
+                                                 options:kNilOptions];
+    
     if ([[NSDate date] compare:whenShouldWeAskAgain] == NSOrderedAscending) {
         return NO;
     }

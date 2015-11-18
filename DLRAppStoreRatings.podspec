@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "DLRAppStoreRatings"
-  s.version          = "1.0.2"
+  s.version          = "1.1.0"
   s.summary          = "Engine to track app events and determine when to show an app ratings prompt."
   s.homepage         = "https://github.com/detroit-labs/dlr-app-store-ratings-ios"
   s.license          = 'COMMERCIAL'

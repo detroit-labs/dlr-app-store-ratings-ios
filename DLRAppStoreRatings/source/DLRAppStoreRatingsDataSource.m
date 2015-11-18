@@ -61,23 +61,24 @@ static NSString* const kAppRatingsEvents = @"DLR_AppRatings_Events";
 
 #pragma mark - events property
 
-- (NSMutableDictionary *)events {
-    NSMutableDictionary *storedEvents = [[NSUserDefaults standardUserDefaults] objectForKey:kAppRatingsEvents];
+- (NSDictionary *)events {
+    NSDictionary *storedEvents =
+    [[NSUserDefaults standardUserDefaults] objectForKey:kAppRatingsEvents];
     
     if (storedEvents == nil) {
-        storedEvents = [NSMutableDictionary new];
+        storedEvents = @{};
     }
     
     return storedEvents;
 }
 
-- (void)setEvents:(NSMutableDictionary *)events {
+- (void)setEvents:(NSDictionary *)events {
     [[NSUserDefaults standardUserDefaults] setObject:events forKey:kAppRatingsEvents];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void)addEvent:(NSString *)eventName {
-    NSMutableDictionary *currentEvents = [self.events mutableCopy];
+    NSMutableDictionary <NSString *, NSNumber *> *currentEvents = [self.events mutableCopy];
     
     if (currentEvents[eventName]) {
         currentEvents[eventName] = @([currentEvents[eventName] integerValue] + 1);
@@ -86,6 +87,10 @@ static NSString* const kAppRatingsEvents = @"DLR_AppRatings_Events";
     }
     
     self.events = currentEvents;
+}
+
+- (void)clearEvents {
+    self.events = @{};
 }
 
 @end

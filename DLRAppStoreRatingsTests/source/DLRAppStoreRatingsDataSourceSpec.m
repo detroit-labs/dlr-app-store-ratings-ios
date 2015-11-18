@@ -117,7 +117,7 @@ NSDate *now;
     
     // use the actual NSUserDefaults for this test
     [userDefaultsMock stopMocking];
-    dataSource.events = nil;
+    [dataSource clearEvents];
     
     NSString *eventName = @"Test Event";
     

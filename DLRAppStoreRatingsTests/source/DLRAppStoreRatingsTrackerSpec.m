@@ -363,7 +363,7 @@ NSString *version;
     
     [tracker userDidSelectRateApp];
     
-    OCMVerify([dataSourceMock setEvents:nil]);
+    OCMVerify([dataSourceMock clearEvents]);
 }
 
 - (void)test_whenUserSelectsFeedbackOption_executesFeedbackBlock {
@@ -392,7 +392,7 @@ NSString *version;
     
     tracker = [DLRAppStoreRatingsTracker new];
     
-    OCMVerify([dataSourceMock setEvents:nil]);
+    OCMVerify([dataSourceMock clearEvents]);
     
 }
 
@@ -528,7 +528,7 @@ NSString *version;
     
     [tracker addEvent:eventName];
     
-    OCMVerify([dataSourceMock setEvents:nil]);
+    OCMVerify([dataSourceMock clearEvents]);
     
 }
 

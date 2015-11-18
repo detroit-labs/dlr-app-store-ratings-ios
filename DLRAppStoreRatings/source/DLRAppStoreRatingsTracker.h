@@ -10,10 +10,12 @@
 
 @class DLRAppStoreRatingsRule;
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface DLRAppStoreRatingsTracker : NSObject
 
 @property(nonatomic, copy) NSString *appId;
-@property(nonatomic, copy) void (^feedbackBlock)();
+@property(nullable, nonatomic, copy) void (^feedbackBlock)();
 @property(nonatomic) NSInteger nagDays;
 @property(nonatomic, readonly, getter=isPaused) BOOL paused;
 
@@ -29,3 +31,5 @@
 - (void)userDidDecline;
 
 @end
+
+NS_ASSUME_NONNULL_END

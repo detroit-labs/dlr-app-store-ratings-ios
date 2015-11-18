@@ -8,12 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface DLRAppStoreRatingsRule : NSObject
 
 @property (nonatomic, copy) NSString *screenName;
-@property (nonatomic, copy) NSDictionary *thresholds;
-@property (nonatomic, copy) BOOL (^ruleBlock)(void);
+@property (nonatomic, copy) NSDictionary <NSString *, NSNumber *> *thresholds;
+@property (nullable, nonatomic, copy) BOOL (^ruleBlock)(void);
 
-+ (DLRAppStoreRatingsRule *)ruleWithBlock:(BOOL (^)(void))ruleBlock;
++ (DLRAppStoreRatingsRule *)ruleWithBlock:(nullable BOOL (^)(void))ruleBlock;
 
 @end
+
+NS_ASSUME_NONNULL_END

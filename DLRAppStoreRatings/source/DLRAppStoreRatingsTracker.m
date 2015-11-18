@@ -64,7 +64,7 @@ static NSString* const kAppRatingsBundleVersion = @"CFBundleShortVersionString";
 - (void)addEvent:(NSString *)eventName {
     
     if ([DLRAppStoreRatingsDebugManager shouldClearData]) {
-        self.dataSource.events = nil;
+        [self.dataSource clearEvents];
         self.dataSource.lastRatedVersion = nil;
         self.dataSource.lastActionTakenDate = nil;
         [DLRAppStoreRatingsDebugManager setClearData:NO];
@@ -168,7 +168,7 @@ static NSString* const kAppRatingsBundleVersion = @"CFBundleShortVersionString";
 }
 
 - (void)clearEvents {
-    self.dataSource.events = nil;
+    [self.dataSource clearEvents];
 }
 
 - (void)userDidSelectFeedback {

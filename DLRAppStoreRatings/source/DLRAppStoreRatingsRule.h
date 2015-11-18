@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSDictionary <NSString *, NSNumber *> *thresholds;
 @property (nullable, nonatomic, copy) BOOL (^ruleBlock)(void);
 
-+ (DLRAppStoreRatingsRule *)ruleWithBlock:(BOOL (^)(void))ruleBlock;
++ (DLRAppStoreRatingsRule *)ruleWithBlock:(nullable BOOL (^)(void))ruleBlock;
 
 @end
 

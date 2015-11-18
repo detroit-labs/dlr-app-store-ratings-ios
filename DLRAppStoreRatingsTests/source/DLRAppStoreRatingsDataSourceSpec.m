@@ -90,7 +90,7 @@ NSDate *now;
     
     OCMStub([userDefaultsMock objectForKey:kAppRatingsEvents]).andReturn(events);
     
-    XCTAssertEqual(dataSource.events, events, @"Expected events to equal the events from NSUserDefaults");
+    XCTAssertEqualObjects(dataSource.events, events, @"Expected events to equal the events from NSUserDefaults");
     
 }
 

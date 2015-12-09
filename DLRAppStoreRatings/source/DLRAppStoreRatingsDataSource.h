@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, copy) NSDate *lastActionTakenDate;
 @property (nullable, nonatomic, copy) NSString *lastRatedVersion;
 @property (nullable, nonatomic, copy) NSString *lastDeclinedVersion;
+@property (nullable, nonatomic, copy) NSString *lastVersionWithFeedback;
 @property (nonatomic, copy) NSDictionary <NSString *, NSNumber *> *events;
 
 + (instancetype)sharedInstance;

@@ -16,6 +16,7 @@ static NSString* const kAppRatingsEvents = @"DLR_AppRatings_Events";
 static NSString* const kAppRatingsLastActionTakeDate = @"DLR_AppRatings_LastActionTaken";
 static NSString* const kAppRatingsLastRatedVersion = @"DLR_AppRatings_LastRatedVersion";
 static NSString* const kAppRatingsLastDeclinedVersion = @"DLR_AppRatings_LastDeclinedVersion";
+static NSString* const kAppRatingsLastVersionWithFeedback = @"DLR_AppRatings_LastVersionWithFeedback";
 
 @interface DLRAppStoreRatingsDataSourceSpec : XCTestCase
 
@@ -102,6 +103,26 @@ NSDate *now;
     dataSource.lastDeclinedVersion = version;
     
     OCMVerify([userDefaultsMock setObject:version forKey:kAppRatingsLastDeclinedVersion]);
+    
+}
+
+- (void)test_lastVersionWithFeedback_getsTheLastVersionWithFeedbackFromStorage {
+    
+    NSString *version = @"3.0.0";
+    
+    OCMStub([userDefaultsMock objectForKey:kAppRatingsLastVersionWithFeedback]).andReturn(version);
+    
+    XCTAssertEqual(dataSource.lastVersionWithFeedback, version, @"Expected lastVersionWithFeedback to be equal to given version");
+    
+}
+
+- (void)test_whenUpdatingLastVersionWithFeedback_itStoresTheLastVersionWithFeedback {
+    
+    NSString *version = @"3.0.0";
+    
+    dataSource.lastVersionWithFeedback = version;
+    
+    OCMVerify([userDefaultsMock setObject:version forKey:kAppRatingsLastVersionWithFeedback]);
     
 }
 

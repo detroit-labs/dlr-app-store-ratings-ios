@@ -319,6 +319,35 @@ NSString *version;
     XCTAssertFalse([tracker shouldTriggerForScreen:@"Test Screen"], @"Expected shouldTrigger to be FALSE");
 }
 
+- (void)test_givenAppVersionHasAlreadyBeenGivenFeedback_andShouldPromptForVersionsWithFeedbackIsTrue_shouldTrigger_returnsTrue {
+    
+    OCMStub([dataSourceMock lastVersionWithFeedback]).andReturn(version);
+    
+    DLRAppStoreRatingsRule *rule = [DLRAppStoreRatingsRule ruleWithBlock:^{
+        return YES;
+    }];
+    rule.screenName = @"Test Screen";
+    
+    [tracker addRule:rule];
+    
+    XCTAssertTrue([tracker shouldTriggerForScreen:@"Test Screen"], @"Expected shouldTrigger to be TRUE");
+}
+
+- (void)test_givenAppVersionHasAlreadyBeenGivenFeedback_andShouldPromptForVersionsWithFeedbackIsIsFalse_shouldTrigger_returnsFalse {
+    
+    OCMStub([dataSourceMock lastVersionWithFeedback]).andReturn(version);
+    
+    DLRAppStoreRatingsRule *rule = [DLRAppStoreRatingsRule ruleWithBlock:^{
+        return YES;
+    }];
+    rule.screenName = @"Test Screen";
+    
+    tracker.shouldPromptForVersionsWithFeedback = NO;
+    [tracker addRule:rule];
+    
+    XCTAssertFalse([tracker shouldTriggerForScreen:@"Test Screen"], @"Expected shouldTrigger to be FALSE");
+}
+
 - (void)test_givenAppVersionHasNotAlreadyBeenReviewed_shouldTrigger_returnsTrue {
     DLRAppStoreRatingsRule *rule = [DLRAppStoreRatingsRule ruleWithBlock:^{
         return YES;
@@ -485,6 +514,21 @@ NSString *version;
     OCMVerify([dataSourceMock setLastActionTakenDate:now]);
     
     [dateMock stopMocking];
+}
+
+- (void)test_whenUserGivesFeedback_itSetsTheLastVersionWithFeedbackOfTheApp {
+    // already have a tracker at version 3.1.1
+    
+    // stub out bundle so that the new version is higher than the old version
+    // recreate bundle mock so we can stub out the same key with a different value
+    bundleMock = OCMClassMock([NSBundle class]);
+    NSDictionary *infoDictionary = @{kAppRatingsBundleVersion: @"4.0.0"};
+    OCMStub([bundleMock infoDictionary]).andReturn(infoDictionary);
+    OCMStub(ClassMethod([bundleMock mainBundle])).andReturn(bundleMock);
+    
+    [tracker userDidSelectFeedback];
+    
+    OCMVerify([dataSourceMock setLastVersionWithFeedback:@"4.0.0"]);
 }
 
 - (void)test_whenUserRatesApp_itSetsTheLastActionTakenDateToToday {

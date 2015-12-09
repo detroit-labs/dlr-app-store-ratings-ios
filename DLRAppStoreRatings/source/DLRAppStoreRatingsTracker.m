@@ -94,7 +94,15 @@ static NSString* const kAppRatingsBundleVersion = @"CFBundleShortVersionString";
         return YES;
     }
     
-    if ([self.currentAppVersion isEqualToString:self.dataSource.lastRatedVersion]) {
+    NSString *currentAppVersion = self.currentAppVersion;
+    DLRAppStoreRatingsDataSource *dataSource = self.dataSource;
+    
+    if ([currentAppVersion isEqualToString:dataSource.lastRatedVersion]) {
+        return NO;
+    }
+    
+    if (self.shouldPromptForDeclinedVersions == NO &&
+        [currentAppVersion isEqualToString:dataSource.lastDeclinedVersion]) {
         return NO;
     }
     
@@ -189,6 +197,7 @@ static NSString* const kAppRatingsBundleVersion = @"CFBundleShortVersionString";
 }
 
 - (void)userDidDecline {
+    [self updateLastVersionDeclined];
     [self updateLastActionTakenDate];
 }
 
@@ -202,6 +211,10 @@ static NSString* const kAppRatingsBundleVersion = @"CFBundleShortVersionString";
 
 - (void)updateLastVersionRated {
     self.dataSource.lastRatedVersion = self.currentAppVersion;
+}
+
+- (void)updateLastVersionDeclined {
+    self.dataSource.lastDeclinedVersion = self.currentAppVersion;
 }
 
 @end

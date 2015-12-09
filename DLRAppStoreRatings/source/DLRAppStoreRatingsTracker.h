@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nullable, nonatomic, copy) void (^feedbackBlock)();
 @property(nonatomic) NSInteger nagDays;
 @property(nonatomic, readonly, getter=isPaused) BOOL paused;
+@property(nonatomic) BOOL shouldPromptForDeclinedVersions;
 
 + (instancetype)sharedInstance;
 - (void)addEvent:(NSString *)eventName;

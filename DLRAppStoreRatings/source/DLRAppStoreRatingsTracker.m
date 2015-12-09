@@ -18,6 +18,8 @@ static NSString* const kAppRatingsBundleVersion = @"CFBundleShortVersionString";
 
 @interface DLRAppStoreRatingsTracker()
 
+@property (nonatomic, readonly) NSString *currentAppVersion;
+
 @property (nonatomic) NSMutableArray *rules;
 @property (nonatomic) DLRAppStoreRatingsDataSource *dataSource;
 
@@ -42,6 +44,9 @@ static NSString* const kAppRatingsBundleVersion = @"CFBundleShortVersionString";
     if(self) {
         
         self.dataSource = [DLRAppStoreRatingsDataSource sharedInstance];
+        
+        self.shouldPromptForDeclinedVersions = YES;
+        self.shouldPromptForVersionsWithFeedback = YES;
         
         if(![self.dataSource.previousKnownVersion isEqualToString:self.currentAppVersion]) {
             
@@ -94,7 +99,20 @@ static NSString* const kAppRatingsBundleVersion = @"CFBundleShortVersionString";
         return YES;
     }
     
-    if ([self.currentAppVersion isEqualToString:self.dataSource.lastRatedVersion]) {
+    NSString *currentAppVersion = self.currentAppVersion;
+    DLRAppStoreRatingsDataSource *dataSource = self.dataSource;
+    
+    if ([currentAppVersion isEqualToString:dataSource.lastRatedVersion]) {
+        return NO;
+    }
+    
+    if (self.shouldPromptForDeclinedVersions == NO &&
+        [currentAppVersion isEqualToString:dataSource.lastDeclinedVersion]) {
+        return NO;
+    }
+    
+    if (self.shouldPromptForVersionsWithFeedback == NO &&
+        [currentAppVersion isEqualToString:dataSource.lastVersionWithFeedback]) {
         return NO;
     }
     
@@ -185,10 +203,12 @@ static NSString* const kAppRatingsBundleVersion = @"CFBundleShortVersionString";
         self.feedbackBlock();
     }
     
+    [self updateLastVersionWithFeedback];
     [self updateLastActionTakenDate];
 }
 
 - (void)userDidDecline {
+    [self updateLastVersionDeclined];
     [self updateLastActionTakenDate];
 }
 
@@ -202,6 +222,14 @@ static NSString* const kAppRatingsBundleVersion = @"CFBundleShortVersionString";
 
 - (void)updateLastVersionRated {
     self.dataSource.lastRatedVersion = self.currentAppVersion;
+}
+
+- (void)updateLastVersionDeclined {
+    self.dataSource.lastDeclinedVersion = self.currentAppVersion;
+}
+
+- (void)updateLastVersionWithFeedback {
+    self.dataSource.lastVersionWithFeedback = self.currentAppVersion;
 }
 
 @end

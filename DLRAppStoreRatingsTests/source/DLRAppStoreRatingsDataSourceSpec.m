@@ -12,6 +12,8 @@
 
 #import "DLRAppStoreRatingsDataSource.h"
 
+#import "DLVersion.h"
+
 static NSString* const kAppRatingsEvents = @"DLR_AppRatings_Events";
 static NSString* const kAppRatingsLastActionTakeDate = @"DLR_AppRatings_LastActionTaken";
 static NSString* const kAppRatingsLastRatedVersion = @"DLR_AppRatings_LastRatedVersion";

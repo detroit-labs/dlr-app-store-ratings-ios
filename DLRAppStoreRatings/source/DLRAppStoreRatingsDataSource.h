@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-#import "DLVersion.h"
-
 NS_ASSUME_NONNULL_BEGIN
+
+@class DLVersion;
 
 @interface DLRAppStoreRatingsDataSource : NSObject
 

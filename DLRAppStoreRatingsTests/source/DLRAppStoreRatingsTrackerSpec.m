@@ -15,6 +15,8 @@
 #import "DLRAppStoreRatingsTracker.h"
 #import "DLRAppStoreRatingsRule.h"
 
+#import "DLVersion.h"
+
 static NSString* const kAppRatingsBundleVersion = @"CFBundleShortVersionString";
 
 id dataSourceMock;

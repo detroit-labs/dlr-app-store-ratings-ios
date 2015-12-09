@@ -30,13 +30,20 @@ static NSString* const kAppRatingsEvents = @"DLR_AppRatings_Events";
 
 #pragma mark - previousKnownVersion property
 
-- (void)setPreviousKnownVersion:(NSString *)previousKnownVersion {
-    [[NSUserDefaults standardUserDefaults] setObject:previousKnownVersion forKey:kAppRatingsCurrentVersion];
+- (void)setPreviousKnownVersion:(DLVersion *)previousKnownVersion {
+    [[NSUserDefaults standardUserDefaults] setObject:previousKnownVersion.string forKey:kAppRatingsCurrentVersion];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-- (NSString *)previousKnownVersion {
-    return [[NSUserDefaults standardUserDefaults] objectForKey:kAppRatingsCurrentVersion];
+- (DLVersion *)previousKnownVersion {
+    NSString *version = [[NSUserDefaults standardUserDefaults] objectForKey:kAppRatingsCurrentVersion];
+    
+    if (version != nil) {
+        return [DLVersion versionWithString:version];
+    }
+    else {
+        return nil;
+    }
 }
 
 #pragma mark - lastActionTakenDate property
@@ -52,35 +59,56 @@ static NSString* const kAppRatingsEvents = @"DLR_AppRatings_Events";
 
 #pragma mark - lastRatedVersion property
 
-- (void)setLastRatedVersion:(NSString *)lastRatedVersion {
-    [[NSUserDefaults standardUserDefaults] setObject:lastRatedVersion forKey:kAppRatingsLastRatedVersion];
+- (void)setLastRatedVersion:(DLVersion *)lastRatedVersion {
+    [[NSUserDefaults standardUserDefaults] setObject:lastRatedVersion.string forKey:kAppRatingsLastRatedVersion];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-- (NSString *)lastRatedVersion {
-    return [[NSUserDefaults standardUserDefaults] objectForKey:kAppRatingsLastRatedVersion];
+- (DLVersion *)lastRatedVersion {
+    NSString *version = [[NSUserDefaults standardUserDefaults] objectForKey:kAppRatingsLastRatedVersion];
+    
+    if (version != nil) {
+        return [DLVersion versionWithString:version];
+    }
+    else {
+        return nil;
+    }
 }
 
 #pragma mark - lastDeclinedVersion property
 
-- (void)setLastDeclinedVersion:(NSString *)lastDeclinedVersion {
-    [[NSUserDefaults standardUserDefaults] setObject:lastDeclinedVersion forKey:kAppRatingsLastDeclinedVersion];
+- (void)setLastDeclinedVersion:(DLVersion *)lastDeclinedVersion {
+    [[NSUserDefaults standardUserDefaults] setObject:lastDeclinedVersion.string forKey:kAppRatingsLastDeclinedVersion];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-- (NSString *)lastDeclinedVersion {
-    return [[NSUserDefaults standardUserDefaults] objectForKey:kAppRatingsLastDeclinedVersion];
+- (DLVersion *)lastDeclinedVersion {
+    NSString *version = [[NSUserDefaults standardUserDefaults] objectForKey:kAppRatingsLastDeclinedVersion];
+    
+    if (version != nil) {
+        return [DLVersion versionWithString:version];
+    }
+    else {
+        return nil;
+    }
 }
 
 #pragma mark - lastVersionWithFeedback property
 
-- (void)setLastVersionWithFeedback:(NSString *)lastVersionWithFeedback {
-    [[NSUserDefaults standardUserDefaults] setObject:lastVersionWithFeedback forKey:kAppRatingsLastVersionWithFeedback];
+- (void)setLastVersionWithFeedback:(DLVersion *)lastVersionWithFeedback {
+    [[NSUserDefaults standardUserDefaults] setObject:lastVersionWithFeedback.string forKey:kAppRatingsLastVersionWithFeedback];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-- (NSString *)lastVersionWithFeedback {
-    return [[NSUserDefaults standardUserDefaults] objectForKey:kAppRatingsLastVersionWithFeedback];
+- (DLVersion *)lastVersionWithFeedback {
+    NSString *version = [[NSUserDefaults standardUserDefaults] objectForKey:kAppRatingsLastVersionWithFeedback];
+    
+    if (version != nil) {
+        return [DLVersion versionWithString:version];
+    }
+    else {
+        return nil;
+    }
 }
 
 #pragma mark - events property

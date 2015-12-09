@@ -17,4 +17,5 @@ Pod::Spec.new do |s|
   s.public_header_files = 'DLRAppStoreRatings/source/**/*.h'
 
   s.dependency 'DLRUIKit', '~> 1.2'
+  s.dependency 'DLVersion', '~> 0.3'
 end

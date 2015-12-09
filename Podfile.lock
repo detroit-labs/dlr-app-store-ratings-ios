@@ -1,13 +1,16 @@
 PODS:
-  - DLRUIKit (1.2.0)
-  - OCMock (3.1.2)
+  - DLRUIKit (1.4.0)
+  - DLVersion (0.3.2)
+  - OCMock (3.2)
 
 DEPENDENCIES:
   - DLRUIKit (~> 1.2)
-  - OCMock (~> 3.1)
+  - DLVersion (~> 0.3)
+  - OCMock (~> 3.2)
 
 SPEC CHECKSUMS:
-  DLRUIKit: 4d3821f03d41b00e05b8aff4c959c297662e9760
-  OCMock: a10ea9f0a6e921651f96f78b6faee95ebc813b92
+  DLRUIKit: a4b109364ee8682d53d487b0d6afa34607251e50
+  DLVersion: 1419cc201fb6e405c12f9c9c47755e4255f8cd7a
+  OCMock: 28def049ef47f996b515a8eeea958be7ccab2dbb
 
 COCOAPODS: 0.39.0

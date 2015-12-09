@@ -68,61 +68,61 @@ NSDate *now;
 
 - (void)test_lastRatedVersion_getsTheLastVersionRatedFromStorage {
     
-    NSString *version = @"3.0.0";
+    DLVersion *version = [DLVersion versionWithString:@"3.0.0"];
     
-    OCMStub([userDefaultsMock objectForKey:kAppRatingsLastRatedVersion]).andReturn(version);
+    OCMStub([userDefaultsMock objectForKey:kAppRatingsLastRatedVersion]).andReturn(version.string);
     
-    XCTAssertEqual(dataSource.lastRatedVersion, version, @"Expected lastVersionRated to be equal to given version");
+    XCTAssertEqualObjects(dataSource.lastRatedVersion, version, @"Expected lastVersionRated to be equal to given version");
     
 }
 
 - (void)test_whenUpdatingLastRatedVersion_itStoresTheLastVersionRated {
     
-    NSString *version = @"3.0.0";
+    DLVersion *version = [DLVersion versionWithString:@"3.0.0"];
     
     dataSource.lastRatedVersion = version;
     
-    OCMVerify([userDefaultsMock setObject:version forKey:kAppRatingsLastRatedVersion]);
+    OCMVerify([userDefaultsMock setObject:version.string forKey:kAppRatingsLastRatedVersion]);
     
 }
 
 - (void)test_lastDeclinedVersion_getsTheLastVersionDeclinedFromStorage {
     
-    NSString *version = @"3.0.0";
+    DLVersion *version = [DLVersion versionWithString:@"3.0.0"];
     
-    OCMStub([userDefaultsMock objectForKey:kAppRatingsLastDeclinedVersion]).andReturn(version);
+    OCMStub([userDefaultsMock objectForKey:kAppRatingsLastDeclinedVersion]).andReturn(version.string);
     
-    XCTAssertEqual(dataSource.lastDeclinedVersion, version, @"Expected lastVersionDeclined to be equal to given version");
+    XCTAssertEqualObjects(dataSource.lastDeclinedVersion, version, @"Expected lastVersionDeclined to be equal to given version");
     
 }
 
 - (void)test_whenUpdatingLastDeclinedVersion_itStoresTheLastVersionDeclined {
     
-    NSString *version = @"3.0.0";
+    DLVersion *version = [DLVersion versionWithString:@"3.0.0"];
     
     dataSource.lastDeclinedVersion = version;
     
-    OCMVerify([userDefaultsMock setObject:version forKey:kAppRatingsLastDeclinedVersion]);
+    OCMVerify([userDefaultsMock setObject:version.string forKey:kAppRatingsLastDeclinedVersion]);
     
 }
 
 - (void)test_lastVersionWithFeedback_getsTheLastVersionWithFeedbackFromStorage {
     
-    NSString *version = @"3.0.0";
+    DLVersion *version = [DLVersion versionWithString:@"3.0.0"];
     
-    OCMStub([userDefaultsMock objectForKey:kAppRatingsLastVersionWithFeedback]).andReturn(version);
+    OCMStub([userDefaultsMock objectForKey:kAppRatingsLastVersionWithFeedback]).andReturn(version.string);
     
-    XCTAssertEqual(dataSource.lastVersionWithFeedback, version, @"Expected lastVersionWithFeedback to be equal to given version");
+    XCTAssertEqualObjects(dataSource.lastVersionWithFeedback, version, @"Expected lastVersionWithFeedback to be equal to given version");
     
 }
 
 - (void)test_whenUpdatingLastVersionWithFeedback_itStoresTheLastVersionWithFeedback {
     
-    NSString *version = @"3.0.0";
+    DLVersion *version = [DLVersion versionWithString:@"3.0.0"];
     
     dataSource.lastVersionWithFeedback = version;
     
-    OCMVerify([userDefaultsMock setObject:version forKey:kAppRatingsLastVersionWithFeedback]);
+    OCMVerify([userDefaultsMock setObject:version.string forKey:kAppRatingsLastVersionWithFeedback]);
     
 }
 

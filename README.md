@@ -13,6 +13,12 @@ source 'git://git@github.com:CocoaPods/Specs.git'
 pod 'DLRAppStoreRatings'
 ```
 
+## Contributing
+
+After a PR has merged and the version number bumped, push the podspec to the detroit-labs repo:
+
+```pod repo push detroit-labs```
+
 ## Author
 
 - Chris Trevarthen, ctrevarthen@detroitlabs.com

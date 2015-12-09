@@ -18,6 +18,8 @@ static NSString* const kAppRatingsBundleVersion = @"CFBundleShortVersionString";
 
 @interface DLRAppStoreRatingsTracker()
 
+@property (nonatomic, readonly) NSString *currentAppVersion;
+
 @property (nonatomic) NSMutableArray *rules;
 @property (nonatomic) DLRAppStoreRatingsDataSource *dataSource;
 

@@ -4,6 +4,6 @@ target 'DLRAppStoreRatings' do
   pod 'DLRUIKit', '~> 1.2'
 end
 
-target 'DLRAppStoreRatingsTests', :exclusive => true do
+target 'DLRAppStoreRatingsTests' do
   pod 'OCMock', '~> 3.1'
 end

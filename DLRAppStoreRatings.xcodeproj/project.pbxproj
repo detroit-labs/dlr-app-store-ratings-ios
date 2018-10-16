@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		086519FF16CF51BCEB5564D4 /* libPods-DLRAppStoreRatingsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9893E9B62FE2E8F510D59095 /* libPods-DLRAppStoreRatingsTests.a */; };
+		1ABAF6DDA3F21DCD093343F8 /* libPods-DLRAppStoreRatingsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE47CC0E61D1FC59F8E8F335 /* libPods-DLRAppStoreRatingsTests.a */; };
 		43A6C9971A8BCED100747026 /* DLRAppStoreRatings.h in Headers */ = {isa = PBXBuildFile; fileRef = 43A6C9961A8BCED100747026 /* DLRAppStoreRatings.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43A6C99D1A8BCED100747026 /* DLRAppStoreRatings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A6C9911A8BCED100747026 /* DLRAppStoreRatings.framework */; };
 		43D628221A8BD9B7002D1BE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D628211A8BD9B7002D1BE3 /* main.m */; };
@@ -28,7 +28,7 @@
 		43F06FCF1A951A96004D6174 /* DLRAppStoreRatingsDebugManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F06FCB1A951A96004D6174 /* DLRAppStoreRatingsDebugManagerSpec.m */; };
 		43F06FD01A951A96004D6174 /* DLRAppStoreRatingsRuleSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F06FCC1A951A96004D6174 /* DLRAppStoreRatingsRuleSpec.m */; };
 		43F06FD11A951A96004D6174 /* DLRAppStoreRatingsTrackerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F06FCD1A951A96004D6174 /* DLRAppStoreRatingsTrackerSpec.m */; };
-		FEC817BB5EE3401EAF224BCD /* libPods-DLRAppStoreRatings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA9B6312597F003F171111F /* libPods-DLRAppStoreRatings.a */; };
+		7E8520532B3EEA099315C80F /* libPods-DLRAppStoreRatings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 83CB8498324BBF087E319FCF /* libPods-DLRAppStoreRatings.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,12 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		166CE7E8AEEF8795AB58D24A /* Pods-DLRAppStoreRatings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLRAppStoreRatings.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DLRAppStoreRatings/Pods-DLRAppStoreRatings.debug.xcconfig"; sourceTree = "<group>"; };
+		21C327DB3591065295AD5FA6 /* Pods-DLRAppStoreRatings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLRAppStoreRatings.release.xcconfig"; path = "Pods/Target Support Files/Pods-DLRAppStoreRatings/Pods-DLRAppStoreRatings.release.xcconfig"; sourceTree = "<group>"; };
+		3D45A0B3FB6DF77BE8EA7210 /* Pods-DLRAppStoreRatingsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLRAppStoreRatingsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DLRAppStoreRatingsTests/Pods-DLRAppStoreRatingsTests.release.xcconfig"; sourceTree = "<group>"; };
 		43A6C9911A8BCED100747026 /* DLRAppStoreRatings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DLRAppStoreRatings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A6C9951A8BCED100747026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		43A6C9961A8BCED100747026 /* DLRAppStoreRatings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLRAppStoreRatings.h; sourceTree = "<group>"; };
 		43A6C99C1A8BCED100747026 /* DLRAppStoreRatingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DLRAppStoreRatingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43A6C9A21A8BCED100747026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43B9090185FFB3BD7454B97F /* Pods-DLRAppStoreRatingsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLRAppStoreRatingsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DLRAppStoreRatingsTests/Pods-DLRAppStoreRatingsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		43D628131A8BD7FF002D1BE3 /* DLRAppStoreRatings.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DLRAppStoreRatings.podspec; sourceTree = "<group>"; };
 		43D628151A8BD7FF002D1BE3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		43D6281D1A8BD9B7002D1BE3 /* DLRAppStoreRatingsExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DLRAppStoreRatingsExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,11 +79,9 @@
 		43F06FCB1A951A96004D6174 /* DLRAppStoreRatingsDebugManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRAppStoreRatingsDebugManagerSpec.m; sourceTree = "<group>"; };
 		43F06FCC1A951A96004D6174 /* DLRAppStoreRatingsRuleSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRAppStoreRatingsRuleSpec.m; sourceTree = "<group>"; };
 		43F06FCD1A951A96004D6174 /* DLRAppStoreRatingsTrackerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DLRAppStoreRatingsTrackerSpec.m; sourceTree = "<group>"; };
-		887F95B3E373D053230B9A50 /* Pods-DLRAppStoreRatingsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLRAppStoreRatingsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DLRAppStoreRatingsTests/Pods-DLRAppStoreRatingsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		966B2370841252BCD27E8198 /* Pods-DLRAppStoreRatingsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLRAppStoreRatingsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DLRAppStoreRatingsTests/Pods-DLRAppStoreRatingsTests.release.xcconfig"; sourceTree = "<group>"; };
-		9893E9B62FE2E8F510D59095 /* libPods-DLRAppStoreRatingsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DLRAppStoreRatingsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCA9B6312597F003F171111F /* libPods-DLRAppStoreRatings.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DLRAppStoreRatings.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEA3DE19BB5CC568BCD9571D /* Pods-DLRAppStoreRatings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLRAppStoreRatings.release.xcconfig"; path = "Pods/Target Support Files/Pods-DLRAppStoreRatings/Pods-DLRAppStoreRatings.release.xcconfig"; sourceTree = "<group>"; };
+		54481A9576A5CD03474C012E /* Pods-DLRAppStoreRatings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DLRAppStoreRatings.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DLRAppStoreRatings/Pods-DLRAppStoreRatings.debug.xcconfig"; sourceTree = "<group>"; };
+		83CB8498324BBF087E319FCF /* libPods-DLRAppStoreRatings.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DLRAppStoreRatings.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE47CC0E61D1FC59F8E8F335 /* libPods-DLRAppStoreRatingsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DLRAppStoreRatingsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEC817BB5EE3401EAF224BCD /* libPods-DLRAppStoreRatings.a in Frameworks */,
+				7E8520532B3EEA099315C80F /* libPods-DLRAppStoreRatings.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				43A6C99D1A8BCED100747026 /* DLRAppStoreRatings.framework in Frameworks */,
-				086519FF16CF51BCEB5564D4 /* libPods-DLRAppStoreRatingsTests.a in Frameworks */,
+				1ABAF6DDA3F21DCD093343F8 /* libPods-DLRAppStoreRatingsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,25 +113,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		313E6AF2891FC3682969EC7E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CCA9B6312597F003F171111F /* libPods-DLRAppStoreRatings.a */,
-				9893E9B62FE2E8F510D59095 /* libPods-DLRAppStoreRatingsTests.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		43A6C9871A8BCED100747026 = {
 			isa = PBXGroup;
 			children = (
 				43A6C9931A8BCED100747026 /* DLRAppStoreRatings */,
 				43A6C9A01A8BCED100747026 /* DLRAppStoreRatingsTests */,
 				43D6281E1A8BD9B7002D1BE3 /* DLRAppStoreRatingsExampleApp */,
-				313E6AF2891FC3682969EC7E /* Frameworks */,
-				E2CAD336F6B8873917754714 /* Pods */,
 				43A6C9921A8BCED100747026 /* Products */,
 				43D628121A8BD7ED002D1BE3 /* Supporting Files */,
+				7E2E738613C35D714DB8CC94 /* Pods */,
+				98108E4623F65923B18079B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -257,15 +248,24 @@
 			path = source;
 			sourceTree = "<group>";
 		};
-		E2CAD336F6B8873917754714 /* Pods */ = {
+		7E2E738613C35D714DB8CC94 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				166CE7E8AEEF8795AB58D24A /* Pods-DLRAppStoreRatings.debug.xcconfig */,
-				CEA3DE19BB5CC568BCD9571D /* Pods-DLRAppStoreRatings.release.xcconfig */,
-				887F95B3E373D053230B9A50 /* Pods-DLRAppStoreRatingsTests.debug.xcconfig */,
-				966B2370841252BCD27E8198 /* Pods-DLRAppStoreRatingsTests.release.xcconfig */,
+				54481A9576A5CD03474C012E /* Pods-DLRAppStoreRatings.debug.xcconfig */,
+				21C327DB3591065295AD5FA6 /* Pods-DLRAppStoreRatings.release.xcconfig */,
+				43B9090185FFB3BD7454B97F /* Pods-DLRAppStoreRatingsTests.debug.xcconfig */,
+				3D45A0B3FB6DF77BE8EA7210 /* Pods-DLRAppStoreRatingsTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		98108E4623F65923B18079B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83CB8498324BBF087E319FCF /* libPods-DLRAppStoreRatings.a */,
+				DE47CC0E61D1FC59F8E8F335 /* libPods-DLRAppStoreRatingsTests.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,12 +290,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43A6C9A71A8BCED100747026 /* Build configuration list for PBXNativeTarget "DLRAppStoreRatings" */;
 			buildPhases = (
-				7D07763BBB4F55491786D820 /* Check Pods Manifest.lock */,
+				ECE7D2A8DEC6BD1D61D2E738 /* [CP] Check Pods Manifest.lock */,
 				43A6C98C1A8BCED100747026 /* Sources */,
 				43A6C98D1A8BCED100747026 /* Frameworks */,
 				43A6C98E1A8BCED100747026 /* Headers */,
 				43A6C98F1A8BCED100747026 /* Resources */,
-				AB66A0B5D4A0C906955F1FC4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,12 +309,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43A6C9AA1A8BCED100747026 /* Build configuration list for PBXNativeTarget "DLRAppStoreRatingsTests" */;
 			buildPhases = (
-				07C1F00B1768D47598989ECF /* Check Pods Manifest.lock */,
+				99818956AA8414CB7D262534 /* [CP] Check Pods Manifest.lock */,
 				43A6C9981A8BCED100747026 /* Sources */,
 				43A6C9991A8BCED100747026 /* Frameworks */,
 				43A6C99A1A8BCED100747026 /* Resources */,
-				648943E845DCA2B351453306 /* Copy Pods Resources */,
-				C510E4D72712A5724BB5D47B /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -414,79 +411,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		07C1F00B1768D47598989ECF /* Check Pods Manifest.lock */ = {
+		99818956AA8414CB7D262534 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DLRAppStoreRatingsTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		648943E845DCA2B351453306 /* Copy Pods Resources */ = {
+		ECE7D2A8DEC6BD1D61D2E738 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DLRAppStoreRatings-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DLRAppStoreRatingsTests/Pods-DLRAppStoreRatingsTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7D07763BBB4F55491786D820 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		AB66A0B5D4A0C906955F1FC4 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DLRAppStoreRatings/Pods-DLRAppStoreRatings-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C510E4D72712A5724BB5D47B /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DLRAppStoreRatingsTests/Pods-DLRAppStoreRatingsTests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -645,7 +611,7 @@
 		};
 		43A6C9A81A8BCED100747026 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 166CE7E8AEEF8795AB58D24A /* Pods-DLRAppStoreRatings.debug.xcconfig */;
+			baseConfigurationReference = 54481A9576A5CD03474C012E /* Pods-DLRAppStoreRatings.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -662,7 +628,7 @@
 		};
 		43A6C9A91A8BCED100747026 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CEA3DE19BB5CC568BCD9571D /* Pods-DLRAppStoreRatings.release.xcconfig */;
+			baseConfigurationReference = 21C327DB3591065295AD5FA6 /* Pods-DLRAppStoreRatings.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -679,7 +645,7 @@
 		};
 		43A6C9AB1A8BCED100747026 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 887F95B3E373D053230B9A50 /* Pods-DLRAppStoreRatingsTests.debug.xcconfig */;
+			baseConfigurationReference = 43B9090185FFB3BD7454B97F /* Pods-DLRAppStoreRatingsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -696,7 +662,7 @@
 		};
 		43A6C9AC1A8BCED100747026 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 966B2370841252BCD27E8198 /* Pods-DLRAppStoreRatingsTests.release.xcconfig */;
+			baseConfigurationReference = 3D45A0B3FB6DF77BE8EA7210 /* Pods-DLRAppStoreRatingsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = DLRAppStoreRatingsTests/Info.plist;

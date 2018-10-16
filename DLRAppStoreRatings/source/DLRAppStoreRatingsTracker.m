@@ -120,6 +120,10 @@ static NSString* const kAppRatingsBundleVersion = @"CFBundleShortVersionString";
     nagDaysAsComponents.day = self.nagDays;
     
     NSDate *lastActionTakenDate = [self.dataSource lastActionTakenDate];
+
+    if (lastActionTakenDate == nil) {
+        return [self rulesPassForScreen:screenName];
+    }
     
     NSDate *whenShouldWeAskAgain =
     [[NSCalendar currentCalendar] dateByAddingComponents:nagDaysAsComponents

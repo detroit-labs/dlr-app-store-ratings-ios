@@ -15,6 +15,8 @@
 #import "DLRAppStoreRatingsTracker.h"
 #import "DLRAppStoreRatingsRule.h"
 
+#import "DLVersion.h"
+
 static NSString* const kAppRatingsBundleVersion = @"CFBundleShortVersionString";
 
 id dataSourceMock;
@@ -50,16 +52,16 @@ id debugManagerMock;
 id sharedApplication;
 
 DLRAppStoreRatingsTracker *tracker;
-NSString *version;
+DLVersion *version;
 
 
 - (void)setUp {
     [super setUp];
     
-    version = @"3.1.1";
+    version = [DLVersion versionWithString:@"3.1.1"];
     
     bundleMock = OCMClassMock([NSBundle class]);
-    NSDictionary *infoDictionary = @{kAppRatingsBundleVersion: version};
+    NSDictionary *infoDictionary = @{kAppRatingsBundleVersion: version.string};
     OCMStub([bundleMock infoDictionary]).andReturn(infoDictionary);
     OCMStub(ClassMethod([bundleMock mainBundle])).andReturn(bundleMock);
     
@@ -353,7 +355,7 @@ NSString *version;
         return YES;
     }];
     rule.screenName = @"Test Screen";
-    tracker.dataSource.lastRatedVersion = @"3.0.0";
+    tracker.dataSource.lastRatedVersion = [DLVersion versionWithString:@"3.0.0"];
     [tracker addRule:rule];
     
     XCTAssertTrue([tracker shouldTriggerForScreen:@"Test Screen"], @"Expected shouldTrigger to be TRUE");
@@ -446,7 +448,8 @@ NSString *version;
     OCMStub([bundleMock infoDictionary]).andReturn(infoDictionary);
     OCMStub(ClassMethod([bundleMock mainBundle])).andReturn(bundleMock);
     
-    OCMStub([dataSourceMock previousKnownVersion]).andReturn(@"3.0.0");
+    DLVersion *previousVersion = [DLVersion versionWithString:@"3.0.0"];
+    OCMStub([dataSourceMock previousKnownVersion]).andReturn(previousVersion);
     
     tracker = [DLRAppStoreRatingsTracker new];
     
@@ -457,19 +460,21 @@ NSString *version;
 - (void)test_givenAppVersionIsUpdated_whenTrackerIsInitialized_itTellsDataSourceToStoreUpdatedAppVersion {
     
     // already have a tracker at version 3.1.1
+    DLVersion *newVersion = [DLVersion versionWithString:@"4.0.0"];
     
     // stub out bundle so that the new version is higher than the old version
     // recreate bundle mock so we can stub out the same key with a different value
     bundleMock = OCMClassMock([NSBundle class]);
-    NSDictionary *infoDictionary = @{kAppRatingsBundleVersion: @"4.0.0"};
+    NSDictionary *infoDictionary = @{kAppRatingsBundleVersion: newVersion.string};
     OCMStub([bundleMock infoDictionary]).andReturn(infoDictionary);
     OCMStub(ClassMethod([bundleMock mainBundle])).andReturn(bundleMock);
     
-    OCMStub([dataSourceMock previousKnownVersion]).andReturn(@"3.0.0");
+    DLVersion *previousVersion = [DLVersion versionWithString:@"3.0.0"];
+    OCMStub([dataSourceMock previousKnownVersion]).andReturn(previousVersion);
     
     tracker = [DLRAppStoreRatingsTracker new];
     
-    OCMVerify([dataSourceMock setPreviousKnownVersion:@"4.0.0"]);
+    OCMVerify([dataSourceMock setPreviousKnownVersion:newVersion]);
     
 }
 
@@ -489,17 +494,20 @@ NSString *version;
 
 - (void)test_whenUserSaysNoToRatingOrFeedback_itSetsTheLastDeclinedVersionOfTheApp {
     // already have a tracker at version 3.1.1
+    DLVersion *newVersion = [DLVersion versionWithString:@"4.0.0"];
     
     // stub out bundle so that the new version is higher than the old version
     // recreate bundle mock so we can stub out the same key with a different value
     bundleMock = OCMClassMock([NSBundle class]);
-    NSDictionary *infoDictionary = @{kAppRatingsBundleVersion: @"4.0.0"};
+    NSDictionary *infoDictionary = @{kAppRatingsBundleVersion: newVersion.string};
     OCMStub([bundleMock infoDictionary]).andReturn(infoDictionary);
     OCMStub(ClassMethod([bundleMock mainBundle])).andReturn(bundleMock);
     
+    [[dataSourceMock expect] setLastVersionWithFeedback:[OCMArg isEqual:newVersion]];
+    
     [tracker userDidDecline];
     
-    OCMVerify([dataSourceMock setLastDeclinedVersion:@"4.0.0"]);
+    OCMVerify(dataSourceMock);
 }
 
 - (void)test_whenUserGivesFeedback_itSetsTheLastActionTakenDateToToday {
@@ -518,17 +526,20 @@ NSString *version;
 
 - (void)test_whenUserGivesFeedback_itSetsTheLastVersionWithFeedbackOfTheApp {
     // already have a tracker at version 3.1.1
+    DLVersion *newVersion = [DLVersion versionWithString:@"4.0.0"];
     
     // stub out bundle so that the new version is higher than the old version
     // recreate bundle mock so we can stub out the same key with a different value
     bundleMock = OCMClassMock([NSBundle class]);
-    NSDictionary *infoDictionary = @{kAppRatingsBundleVersion: @"4.0.0"};
+    NSDictionary *infoDictionary = @{kAppRatingsBundleVersion: newVersion.string};
     OCMStub([bundleMock infoDictionary]).andReturn(infoDictionary);
     OCMStub(ClassMethod([bundleMock mainBundle])).andReturn(bundleMock);
     
+    [[dataSourceMock expect] setLastVersionWithFeedback:[OCMArg isEqual:newVersion]];
+    
     [tracker userDidSelectFeedback];
     
-    OCMVerify([dataSourceMock setLastVersionWithFeedback:@"4.0.0"]);
+    OCMVerify(dataSourceMock);
 }
 
 - (void)test_whenUserRatesApp_itSetsTheLastActionTakenDateToToday {
@@ -548,17 +559,20 @@ NSString *version;
 - (void)test_whenUserRatesApp_itSetsTheLastRatedVersionOfTheApp {
     
     // already have a tracker at version 3.1.1
+    DLVersion *newVersion = [DLVersion versionWithString:@"4.0.0"];
     
     // stub out bundle so that the new version is higher than the old version
     // recreate bundle mock so we can stub out the same key with a different value
     bundleMock = OCMClassMock([NSBundle class]);
-    NSDictionary *infoDictionary = @{kAppRatingsBundleVersion: @"4.0.0"};
+    NSDictionary *infoDictionary = @{kAppRatingsBundleVersion: newVersion.string};
     OCMStub([bundleMock infoDictionary]).andReturn(infoDictionary);
     OCMStub(ClassMethod([bundleMock mainBundle])).andReturn(bundleMock);
     
+    [[dataSourceMock expect] setLastVersionWithFeedback:[OCMArg isEqual:newVersion]];
+    
     [tracker userDidSelectRateApp];
     
-    OCMVerify([dataSourceMock setLastRatedVersion:@"4.0.0"]);
+    OCMVerify(dataSourceMock);
     
 }
 
@@ -625,7 +639,7 @@ NSString *version;
     
     OCMStub([debugManagerMock shouldClearData]).andReturn(YES);
     
-    tracker.dataSource.lastRatedVersion = @"4.0.0";
+    tracker.dataSource.lastRatedVersion = [DLVersion versionWithString:@"4.0.0"];
     
     [tracker addEvent:eventName];
     

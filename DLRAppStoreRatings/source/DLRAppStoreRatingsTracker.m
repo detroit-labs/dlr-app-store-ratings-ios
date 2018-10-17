@@ -14,11 +14,13 @@
 #import "DLRAppStoreRatingsTracker.h"
 #import "UIDevice+DLR.h"
 
+#import "DLVersion.h"
+
 static NSString* const kAppRatingsBundleVersion = @"CFBundleShortVersionString";
 
 @interface DLRAppStoreRatingsTracker()
 
-@property (nonatomic, readonly) NSString *currentAppVersion;
+@property (nonatomic, readonly) DLVersion *currentAppVersion;
 
 @property (nonatomic) NSMutableArray *rules;
 @property (nonatomic) DLRAppStoreRatingsDataSource *dataSource;
@@ -48,7 +50,7 @@ static NSString* const kAppRatingsBundleVersion = @"CFBundleShortVersionString";
         self.shouldPromptForDeclinedVersions = YES;
         self.shouldPromptForVersionsWithFeedback = YES;
         
-        if(![self.dataSource.previousKnownVersion isEqualToString:self.currentAppVersion]) {
+        if(![self.dataSource.previousKnownVersion isEqualToVersion:self.currentAppVersion]) {
             
             [self clearEvents];
             self.dataSource.previousKnownVersion = self.currentAppVersion;
@@ -99,20 +101,20 @@ static NSString* const kAppRatingsBundleVersion = @"CFBundleShortVersionString";
         return YES;
     }
     
-    NSString *currentAppVersion = self.currentAppVersion;
+    DLVersion *currentAppVersion = self.currentAppVersion;
     DLRAppStoreRatingsDataSource *dataSource = self.dataSource;
     
-    if ([currentAppVersion isEqualToString:dataSource.lastRatedVersion]) {
+    if ([currentAppVersion isEqualToVersion:dataSource.lastRatedVersion]) {
         return NO;
     }
     
     if (self.shouldPromptForDeclinedVersions == NO &&
-        [currentAppVersion isEqualToString:dataSource.lastDeclinedVersion]) {
+        [currentAppVersion isEqualToVersion:dataSource.lastDeclinedVersion]) {
         return NO;
     }
     
     if (self.shouldPromptForVersionsWithFeedback == NO &&
-        [currentAppVersion isEqualToString:dataSource.lastVersionWithFeedback]) {
+        [currentAppVersion isEqualToVersion:dataSource.lastVersionWithFeedback]) {
         return NO;
     }
     
@@ -212,8 +214,15 @@ static NSString* const kAppRatingsBundleVersion = @"CFBundleShortVersionString";
     [self updateLastActionTakenDate];
 }
 
-- (NSString *)currentAppVersion {
-    return [[[NSBundle mainBundle] infoDictionary] objectForKey:kAppRatingsBundleVersion];
+- (DLVersion *)currentAppVersion {
+    NSString *versionString = [[[NSBundle mainBundle] infoDictionary] objectForKey:kAppRatingsBundleVersion];
+    
+    if (versionString != nil) {
+        return [DLVersion versionWithString:versionString];
+    }
+    else {
+        return nil;
+    }
 }
 
 - (void)updateLastActionTakenDate {

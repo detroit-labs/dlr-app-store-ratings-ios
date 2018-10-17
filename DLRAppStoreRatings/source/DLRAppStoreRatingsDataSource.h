@@ -10,13 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class DLVersion;
+
 @interface DLRAppStoreRatingsDataSource : NSObject
 
-@property (nullable, nonatomic, copy) NSString *previousKnownVersion;
-@property (nullable, nonatomic, copy) NSDate *lastActionTakenDate;
-@property (nullable, nonatomic, copy) NSString *lastRatedVersion;
-@property (nullable, nonatomic, copy) NSString *lastDeclinedVersion;
-@property (nullable, nonatomic, copy) NSString *lastVersionWithFeedback;
+@property (nullable, nonatomic) DLVersion *previousKnownVersion;
+@property (nullable, nonatomic) NSDate *lastActionTakenDate;
+@property (nullable, nonatomic) DLVersion *lastRatedVersion;
+@property (nullable, nonatomic) DLVersion *lastDeclinedVersion;
+@property (nullable, nonatomic) DLVersion *lastVersionWithFeedback;
 @property (nonatomic, copy) NSDictionary <NSString *, NSNumber *> *events;
 
 + (instancetype)sharedInstance;
